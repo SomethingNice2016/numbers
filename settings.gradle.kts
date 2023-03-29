@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "testtask"
+rootProject.name = "numbers"
 include(":app")

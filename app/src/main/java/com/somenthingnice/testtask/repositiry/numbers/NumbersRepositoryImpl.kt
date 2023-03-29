@@ -4,8 +4,9 @@ import com.somenthingnice.testtask.core.data.mediator.TransactionMediator
 import com.somenthingnice.testtask.datasource.local.sources.numbers.NumbersLocalSource
 import com.somenthingnice.testtask.datasource.remote.numbers.NumbersRemoteSource
 import javax.inject.Inject
+import javax.inject.Singleton
 
-
+@Singleton
 class NumbersRepositoryImpl @Inject constructor(
     private val remote: NumbersRemoteSource,
     private val local: NumbersLocalSource
