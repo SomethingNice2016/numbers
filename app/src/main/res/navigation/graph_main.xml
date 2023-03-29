@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graph_main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.somenthingnice.testtask.features.home.HomeFragment">
+        <action
+            android:id="@+id/toInfo"
+            app:destination="@id/numberInfo">
+            <argument
+                android:name="number"
+                app:argType="long"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/numberInfo"
+        android:name="com.somenthingnice.testtask.features.numberinfo.NumberInfoFragment">
+        <argument
+            android:name="number"
+            app:argType="long"/>
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/numberSearch"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:imeOptions="actionSearch"
+        android:layout_height="wrap_content"
+        android:hint="Введіть число"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:text="Ви поки що нічого не шукали"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_history" />
+
+</LinearLayout>
