@@ -16,9 +16,4 @@ class MainActivity : AppCompatActivity() {
         findNavController(binding.navHost.id)
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Long
-    }
-
 }
